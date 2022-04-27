@@ -12,14 +12,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','App\Http\Controllers\OperationControlleur@index');
-Route::post('api/creercompte','App\Http\Controllers\OperationControlleur@creerCompte');
-Route::delete('api/deletecompte/{id}','App\Http\Controllers\OperationControlleur@deletecompte');
-Route::post('api/updatecompte/{id}','App\Http\Controllers\OperationControlleur@updatecompte');
-Route::post('api/versement','App\Http\Controllers\OperationControlleur@versement');
-Route::post('api/retrait','App\Http\Controllers\OperationControlleur@retrait');
-Route::post('api/virement','App\Http\Controllers\OperationControlleur@virement');
-Route::get('api/recherchercpte/{id}','App\Http\Controllers\OperationControlleur@recherchercpte');
-Route::delete('api/annulerversement/{id}','App\Http\Controllers\OperationControlleur@annulerversement');
-Route::delete('api/annulerretrait/{id}','App\Http\Controllers\OperationControlleur@annulerretrait');
-Route::get('api/operationcompte/{id}','App\Http\Controllers\OperationControlleur@operationcompte');
+Route::get('/','OperationControlleur@index');
+Route::post('api/creercompte','OperationControlleur@creerCompte');
+Route::delete('api/deletecompte/{id}','OperationControlleur@deletecompte');
+Route::post('api/updatecompte/{id}','OperationControlleur@updatecompte');
+Route::post('api/versement','OperationControlleur@versement');
+Route::post('api/retrait','OperationControlleur@retrait');
+Route::post('api/virement','OperationControlleur@virement');
+Route::get('api/recherchercpte/{id}','OperationControlleur@recherchercpte');
+Route::delete('api/annulerversement/{id}','OperationControlleur@annulerversement');
+Route::delete('api/annulerretrait/{id}','OperationControlleur@annulerretrait');
+Route::get('api/operationcompte/{id}','OperationControlleur@operationcompte');
